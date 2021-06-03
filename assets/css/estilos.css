@@ -1,0 +1,66 @@
+* {
+  font-family: "Noto Sans", sans-serif;
+}
+nav {
+  background: #ff1298;
+}
+
+.brand img {
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+#Hero-Section {
+  height: 100vh;
+  background: url(/assets/img/modeloriendo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+#Hero-Section div {
+  position: absolute;
+  bottom: 80px;
+  width: 100%;
+  left: 20px;
+  color: #ff1298;
+}
+
+#Hero-Section hr {
+  width: 30%;
+  height: 1px;
+  margin: 0px;
+  background: #ff1298;
+}
+
+#Hero-Section h1:first-child {
+  font-weight: 700;
+  font-size: 4rem;
+}
+#Hero-Section h1:last-child {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+@media (max-width: 576px) {
+  #Hero-Section h1:first-child {
+    font-size: 2.5rem;
+    color: aliceblue;
+  }
+  #Hero-Section h1:last-child {
+    font-size: 1.8rem;
+    color: aliceblue;
+  }
+  #Hero-Section {
+    height: 70vh;
+  }
+  #Hero-Section hr {
+    width: 90%;
+  }
+  .brand img {
+    width: 100px;
+  }
+}
+
+/* sobre mi */
