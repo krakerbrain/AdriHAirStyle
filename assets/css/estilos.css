@@ -13,7 +13,7 @@ nav {
 }
 #Hero-Section {
   height: 100vh;
-  background: url(/assets/img/modeloriendo.jpg);
+  background: url(./assets/img/modeloriendo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
