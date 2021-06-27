@@ -29,9 +29,8 @@ nav {
 
 #Hero-Section hr {
   width: 30%;
-  height: 1px;
-  margin: 0px;
-  background: #ff1298;
+  margin: 0;
+  border: #ff1298 1px solid;
 }
 
 #Hero-Section h1:first-child {
@@ -42,7 +41,85 @@ nav {
   font-weight: 400;
   font-size: 3rem;
 }
+h2,
+h5 {
+  font-weight: 700;
+  color: #ff1298;
+}
+#sobreMi img {
+  width: 25vw;
+}
 
+#sobreMi p {
+  line-height: 2em;
+}
+
+#productos {
+  width: 95%;
+  margin: auto;
+}
+
+.card {
+  margin-inline: 10px;
+}
+.card img {
+  width: 80%;
+  height: 270px;
+  margin-top: 8px;
+}
+
+.card-text {
+  font-size: 0.8em;
+}
+
+.modal-body img {
+  width: 70%;
+  height: auto;
+}
+
+.click {
+  font-size: 0.8em;
+}
+
+.card-body {
+  align-self: flex-end;
+}
+
+.boton {
+  box-shadow: inset 0px 1px 0px 0px #fbafe3;
+  background: linear-gradient(to bottom, #ff5bb0 5%, #ef027d 100%);
+  background-color: #ff1298;
+  border-radius: 6px;
+  border: 1px solid #ee1eb5;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #c70067;
+}
+.boton:hover {
+  background: linear-gradient(to bottom, #ef027d 5%, #ff5bb0 100%);
+  background-color: #ef027d;
+}
+.boton:active {
+  position: relative;
+  top: 1px;
+}
+
+.formato {
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+.precio {
+  font-weight: 700;
+  color: #ff1298;
+  font-size: 1.2em;
+}
 @media (max-width: 576px) {
   #Hero-Section h1:first-child {
     font-size: 2.5rem;
@@ -60,6 +137,13 @@ nav {
   }
   .brand img {
     width: 100px;
+  }
+
+  #sobreMi img {
+    width: 50vw;
+  }
+  h2 {
+    font-size: 1.4em;
   }
 }
 
