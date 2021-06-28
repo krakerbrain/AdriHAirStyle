@@ -13,7 +13,7 @@ nav {
 }
 #Hero-Section {
   height: 100vh;
-  background: url(assets/img/modeloriendo.jpg);
+  background: url(/assets/img/modeloriendo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -47,7 +47,7 @@ h5 {
   color: #ff1298;
 }
 #sobreMi img {
-  width: 25vw;
+  width: 80%;
 }
 
 #sobreMi p {
@@ -60,7 +60,7 @@ h5 {
 }
 
 .card {
-  margin-inline: 10px;
+  margin: 10px;
 }
 .card img {
   width: 80%;
@@ -120,6 +120,33 @@ h5 {
   color: #ff1298;
   font-size: 1.2em;
 }
+
+footer{
+  background: #410124;
+  color: #FB5FB6;
+  font-size: 0.9em
+}
+
+footer img{
+    width: 130px;
+}
+
+.menuDerecha li{
+list-style: none;
+padding-bottom: 5px;
+
+}
+footer i{
+color: #FB5FB6;
+font-size: 1.5em
+}
+.copyright{
+  font-size: 0.6em;
+}
+.bandera{
+  width: 5%
+}
+
 @media (max-width: 576px) {
   #Hero-Section h1:first-child {
     font-size: 2.5rem;
