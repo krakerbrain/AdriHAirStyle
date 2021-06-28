@@ -13,7 +13,7 @@ nav {
 }
 #Hero-Section {
   height: 100vh;
-  background: url(./assets/img/modeloriendo.jpg);
+  background: url(/assets/img/modeloriendo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -121,30 +121,29 @@ h5 {
   font-size: 1.2em;
 }
 
-footer{
+footer {
   background: #410124;
-  color: #FB5FB6;
-  font-size: 0.9em
+  color: #fb5fb6;
+  font-size: 0.9em;
 }
 
-footer img{
-    width: 130px;
+footer img {
+  width: 130px;
 }
 
-.menuDerecha li{
-list-style: none;
-padding-bottom: 5px;
-
+.menuDerecha li {
+  list-style: none;
+  padding-bottom: 5px;
 }
-footer i{
-color: #FB5FB6;
-font-size: 1.5em
+footer i {
+  color: #fb5fb6;
+  font-size: 1.5em;
 }
-.copyright{
+.copyright {
   font-size: 0.6em;
 }
-.bandera{
-  width: 5%
+.bandera {
+  width: 5%;
 }
 
 @media (max-width: 576px) {
