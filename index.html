@@ -8,6 +8,9 @@
     <!-- FUENTES -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
     <!-- FONT AWESOME -->
     <link
       rel="stylesheet"
@@ -27,7 +30,7 @@
 
   <body>
     <!-- BARRA DE NAVEGACION -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark py-0">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -63,13 +66,12 @@
 <!-- FIN BARRA DE NAVEGACION -->
 
     <!-- LOGO Y PROPUESTA DE VALOR -->
-    <header id="Hero-Section">
+    <header id="Hero-Section" class="container-fluid">
       <a class="brand" href="#">
         <img src="assets/img/15042021LOGO_1.png" alt="" />
       </a>
-      <div class="text-left">
+      <div class="heroTitulos text-left">
         <h1 class="">Cambiar tu estilo</h1>
-        <hr />
         <h1>no tiene que ser aburrido</h1>
       </div>
     </header>
@@ -79,7 +81,7 @@
     <!-- CARRUSEL DE SERVICIOS DESTACADOS -->
 
     <div class="carrusel pt-5 mx-1">
-      <h2 class="text-center py-4">SERVICIOS DESTACADOS</h2>
+      <h2 class="text-center ">Servicios Destacados</h2>
       <div id="carouselExampleCaptions" class="carousel slide pt-5" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -124,15 +126,16 @@
 
     <!-- BIOGRAFIA -->
 
-    <section class="container pt-5" id="sobreMi">
+    <section class="pt-5" id="sobreMi">
       <div>
-        <h2 class="text-center py-4">QUIEN SOY</h2>
+        <h2 class="text-center">Quien soy</h2>
       </div>
-      <div class="cuerpo row col-sm-12 pt-5">
-        <div class="col-6">
-          <img src="assets/img/adriana-foto-frontal.jpg" alt="" />
+      <div class="container">
+      <div class="cuerpo row pt-5">
+        <div class="fotoBio col-sm-6 text-center">
+          <img class ="" src="assets/img/adriana-foto-frontal.jpg" alt="" />
         </div>
-        <div class="col-6 my-auto">
+        <div class="col-sm-6 my-auto">
           <p class="">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam culpa at facilis odio modi animi pariatur officia, aspernatur omnis eaque quidem ipsam eius placeat in iure quam hic.
             Sit, vel.
@@ -147,23 +150,25 @@
           </p>
         </div>
       </div>
+    </div>
     </section>
     <!-- FIN BIOGRAFIA -->
 
 <!-- PRODUCTOS -->
     <section id="productos" class="pt-5">
-
-    <h2 class="text-center">PRODUCTOS DESTACADOS</h2>
-      <div class="row pt-5">
+<div>
+    <h2 class="text-center">Productos Destacados</h2>
+  </div>
+      <div class="container-fluid row pt-5 justify-content-center">
 <!-- TARJETA1 -->
-        <div id="tarjeta1" class="card text-center" style="width: 16rem; height: 33rem">
+        <div id="" class="card text-center col-sm-2" >
           <div class="cardTop">
             <img src="assets/img/productos/matizador.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <div id="click1" data-toggle="modal" data-target="#exampleModal">
               <h5 class="card-title text-center">MATIZADOR</h5>
               <p class="card-text text-left">Ayuda a proteger el cabello de las altas temperaturas...</p>
-              <p  class="click text-black-50 text-right">Click para más info</p>
+              <p  class="click1 text-black-50 text-right">Click para más info</p>
               <p class="text-left precio">$ 5.000</p>
             </div>
               <div class="card-footer text-right pr-0">
@@ -176,14 +181,14 @@
         </div>
 <!--FIN TARJETA 1 -->
         <!-- TARJETA2 -->
-        <div id="tarjeta2" class="card text-center" style="width: 16rem; height: 33rem">
+        <div id="" class="card text-center col-sm-2">
           <div class="cardTop">
             <img src="assets/img/productos/prehidratante.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <div id="click2" data-toggle="modal" data-target="#exampleModal">
               <h5 class="card-title text-center">PREHIDRATANTE</h5>
               <p class="card-text text-left">Ayuda a proteger el cabello de las altas temperaturas...</p>
-              <p  class="click text-black-50 text-right">Click para más info</p>
+              <p  class="click2 text-black-50 text-right">Click para más info</p>
               <p class="text-left precio">$ 5.000</p>
             </div>
               <div class="card-footer text-right pr-0">
@@ -196,14 +201,14 @@
         </div>
 <!-- FIN TARJETA 2 -->
         <!-- TARJETA3 -->
-        <div id="tarjeta2" class="card text-center" style="width: 16rem; height: 33rem">
+        <div id="" class="card text-center col-sm-2" >
           <div class="cardTop">
             <img src="assets/img/productos/cepillo.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <div id="click3" data-toggle="modal" data-target="#exampleModal">
               <h5 class="card-title text-center">CEPILLO</h5>
               <p class="card-text text-left">Ayuda a proteger el cabello de las altas temperaturas...</p>
-              <p  class="click text-black-50 text-right">Click para más info</p>
+              <p  class="click3 text-black-50 text-right">Click para más info</p>
               <p class="text-left precio">$ 5.000</p>
             </div>
               <div class="card-footer text-right pr-0">
@@ -216,14 +221,14 @@
         </div>
 <!-- FIN TARJETA 3 -->
         <!-- TARJETA4 -->
-        <div id="tarjeta2" class="card text-center" style="width: 16rem; height: 33rem">
+        <div id="" class="card text-center col-sm-2" >
           <div class="cardTop">
             <img src="assets/img/productos/protector-termico-.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <div id="click4" data-toggle="modal" data-target="#exampleModal">
               <h5 class="card-title text-center">PROTECTOR TERMICO</h5>
               <p class="card-text text-left">Ayuda a proteger el cabello de las altas temperaturas...</p>
-              <p  class="click text-black-50 text-right">Click para más info</p>
+              <p  class="click4 text-black-50 text-right">Click para más info</p>
               <p class="text-left precio">$ 5.000</p>
             </div>
               <div class="card-footer text-right pr-0">
@@ -236,14 +241,14 @@
         </div>
 <!-- FIN TARJETA 4 -->
         <!-- TARJETA5 -->
-        <div id="tarjeta2" class="card text-center" style="width: 16rem; height: 33rem">
+        <div id="" class="card text-center col-sm-2" >
           <div class="cardTop">
             <img src="assets/img/productos/keratina.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <div id="click5" data-toggle="modal" data-target="#exampleModal">
               <h5 class="card-title text-center">KERATINA</h5>
               <p class="card-text text-left">Ayuda a proteger el cabello de las altas temperaturas...</p>
-              <p  class="click text-black-50 text-right">Click para más info</p>
+              <p  class="click5 text-black-50 text-right">Click para más info</p>
               <p class="text-left precio">$ 5.000</p>
             </div>
               <div class="card-footer text-right pr-0">
@@ -256,7 +261,7 @@
         </div>
 <!-- FIN TARJETA 5 -->
         <!-- TARJETA6 -->
-        <div id="tarjeta2" class="card text-center" style="width: 16rem; height: 33rem">
+        <!-- <div id="" class="card text-center col-sm-2" >
           <div class="cardTop">
             <img src="assets/img/productos/sombrero_plateado.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
@@ -273,8 +278,10 @@
             </div>
             </div>
           </div>
-        </div>
+        </div> -->
+     
 <!-- FIN TARJETA 6 -->
+</div>
     </section>
     <!-- FIN PRODUCTOS -->
 
@@ -313,16 +320,19 @@
       <div class="typeform-widget" data-url="https://form.typeform.com/to/gGMeqqmG?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 </div>
 <!-- FIN TYPEFORM -->
+
 <!-- FOOTER -->
 <footer>
+<div class="container-fluid">
   <div class="row py-3">
-    <div class="col-4 pl-5 my-auto">
+    <div id="pie" class="col-sm-4 pl-5 my-auto">
       <p>Tlf.: +569 5244 2965</p>
       <p>e: adriana.alfonzor@gmail.com</p>
       <p>Viña del Mar, Chile</p>
       <img class="bandera" src="assets/img/hibridChiVen.png" alt="">
     </div>
-    <div class="col-4 text-center">
+ 
+    <div class="col-sm-4 text-center">
       <img src="/assets/img/15042021LOGO_1.png" alt="">
       <p class="my-auto pb-3">"Cambiar tu estilo no tiene que ser aburrido"</p>
         <div class="redesFooter">
@@ -338,7 +348,8 @@
         </div>
         <p class="my-auto pt-3 copyright">	&copy; Adri Hair Style | Diseño web Mario Montenegro </p>
     </div>
-    <div class=" col-4 text-right pr-5 my-auto">
+
+    <div  id ="menuFooter" class=" col-sm-4 text-right pr-5 my-auto">
       <ul class="menuDerecha my-auto">
         <li>INICIO</li>
         <li>SERVICIOS</li>
@@ -347,7 +358,9 @@
         <li>CONTACTO</li>
       </ul>
     </div>
+
     </div>
+  </div>
 </footer>
 
 <!-- FIN FOOTER -->

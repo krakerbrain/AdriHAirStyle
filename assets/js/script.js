@@ -13,9 +13,9 @@ document.getElementById("click4").onclick = function () {
 document.getElementById("click5").onclick = function () {
   changeModal5();
 };
-document.getElementById("click6").onclick = function () {
-  changeModal6();
-};
+// document.getElementById("click6").onclick = function () {
+//   changeModal6();
+// };
 
 let changeModal1 = () => {
   var imgModal = document.querySelector("#imagenModal");
@@ -37,7 +37,7 @@ let changeModal5 = () => {
   var imgModal = document.querySelector("#imagenModal");
   imgModal.setAttribute("src", "assets/img/productos/keratina.jpg");
 };
-let changeModal6 = () => {
-  var imgModal = document.querySelector("#imagenModal");
-  imgModal.setAttribute("src", "assets/img/productos/sombrero_plateado.jpg");
-};
+// let changeModal6 = () => {
+//   var imgModal = document.querySelector("#imagenModal");
+//   imgModal.setAttribute("src", "assets/img/productos/sombrero_plateado.jpg");
+// };

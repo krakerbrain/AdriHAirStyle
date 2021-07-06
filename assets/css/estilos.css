@@ -4,6 +4,9 @@
 nav {
   background: #ff1298;
 }
+.navbar i {
+  font-size: 1.2rem;
+}
 
 .brand img {
   width: 150px;
@@ -13,7 +16,7 @@ nav {
 }
 #Hero-Section {
   height: 100vh;
-  background: url(/assets/img/modeloriendo.jpg);
+  background: url(../img/modeloriendo.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -22,29 +25,26 @@ nav {
 #Hero-Section div {
   position: absolute;
   bottom: 80px;
-  width: 100%;
   left: 20px;
-  color: #ff1298;
-}
-
-#Hero-Section hr {
-  width: 30%;
-  margin: 0;
-  border: #ff1298 1px solid;
+  color: #ad0263;
 }
 
 #Hero-Section h1:first-child {
-  font-weight: 700;
-  font-size: 4rem;
+  font-size: 7rem;
+  font-family: "Italianno", cursive;
 }
 #Hero-Section h1:last-child {
-  font-weight: 400;
-  font-size: 3rem;
+  font-size: 5rem;
+  font-family: "Italianno", cursive;
 }
-h2,
-h5 {
+
+h2 {
+  background: #ff1298bc;
   font-weight: 700;
-  color: #ff1298;
+  color: #ffffff;
+  font-family: "Italianno", cursive;
+  font-size: 3rem;
+  height: 3rem;
 }
 #sobreMi img {
   width: 80%;
@@ -54,14 +54,6 @@ h5 {
   line-height: 2em;
 }
 
-#productos {
-  width: 95%;
-  margin: auto;
-}
-
-.card {
-  margin: 10px;
-}
 .card img {
   width: 80%;
   height: 270px;
@@ -166,10 +158,23 @@ footer i {
   }
 
   #sobreMi img {
-    width: 50vw;
+    width: 70vw;
   }
   h2 {
-    font-size: 1.4em;
+    font-size: 3em;
+  }
+  .tarjetas {
+    width: 90%;
+  }
+  .card img {
+    width: 60%;
+  }
+  footer ul {
+    display: inline-flex;
+  }
+  #pie,
+  #menuFooter {
+    display: none;
   }
 }
 
