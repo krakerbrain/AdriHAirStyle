@@ -1,43 +1,42 @@
-document.getElementById("click1").onclick = function () {
-  changeModal1();
-};
-document.getElementById("click2").onclick = function () {
-  changeModal2();
-};
-document.getElementById("click3").onclick = function () {
-  changeModal3();
-};
-document.getElementById("click4").onclick = function () {
-  changeModal4();
-};
-document.getElementById("click5").onclick = function () {
-  changeModal5();
-};
-// document.getElementById("click6").onclick = function () {
-//   changeModal6();
-// };
+const tarjetas = document.getElementById("tarjetas");
+const imagenes = ["matizador", "prehidratante", "cepillo", "protector-termico", "keratina"];
 
-let changeModal1 = () => {
-  var imgModal = document.querySelector("#imagenModal");
-  imgModal.setAttribute("src", "assets/img/productos/matizador.jpg");
-};
-let changeModal2 = () => {
-  var imgModal = document.querySelector("#imagenModal");
-  imgModal.setAttribute("src", "assets/img/productos/prehidratante.jpg");
-};
-let changeModal3 = () => {
-  var imgModal = document.querySelector("#imagenModal");
-  imgModal.setAttribute("src", "assets/img/productos/cepillo.jpg");
-};
-let changeModal4 = () => {
-  var imgModal = document.querySelector("#imagenModal");
-  imgModal.setAttribute("src", "assets/img/productos/protector-termico-.jpg");
-};
-let changeModal5 = () => {
-  var imgModal = document.querySelector("#imagenModal");
-  imgModal.setAttribute("src", "assets/img/productos/keratina.jpg");
-};
-// let changeModal6 = () => {
-//   var imgModal = document.querySelector("#imagenModal");
-//   imgModal.setAttribute("src", "assets/img/productos/sombrero_plateado.jpg");
-// };
+imagenes.forEach((item) => {
+  let mayuscula = item.toUpperCase();
+  tarjetas.innerHTML += `
+    <div id="" class="card text-center col-sm-2 mr-3">
+    <div class="cardTop">
+      <img src="assets/img/productos/${item}.jpg" class="card-img-top" alt="..." />
+      <div class="card-body">
+        <div data-toggle="modal">
+          <h5 class="card-title text-center">${mayuscula}</h5>
+          <p class="card-text text-left">Ayuda a proteger el cabello de las altas temperaturas...</p>
+          <p class="text-black-50 text-right btn-show-modal" data-pic="${item}" data-toggle="modal" data-target="#exampleModal">Click para más info</p>
+          <p class="text-left precio">$ 5.000</p>
+        </div>
+        <div class="card-footer text-right pr-0">
+          <button class="boton">CONTACTANOS</button>
+        </div>
+      </div>
+    </div> 
+  </div>`;
+});
+
+let modalCuerpo = document.getElementById("modalBody");
+const button = document.querySelectorAll(".btn-show-modal");
+let tituloModal = document.getElementById("tituloModal");
+
+for (let i = 0; i < button.length; i++) {
+  button[i].addEventListener("click", (e) => {
+    modal = e.target.getAttribute("data-pic");
+    modalCuerpo.innerHTML = `
+      <img id="imagenModal" src="assets/img/productos/${modal}.jpg" class="card-img-top" alt="..." />
+      <div class="mx-5 text-left">
+        <p class="pt-5">Ayuda a proteger el cabello de las altas temperaturas generadas por el secador, plancha y onduladores. Ademas lo hidrata, controla el frizz y tiene un exquisito aroma</p>
+        <p class="text-left formato">Botella de 375ml</p>
+      </div>
+      `;
+    let mayusculaModal = modal.toUpperCase();
+    tituloModal.innerHTML = `${mayusculaModal}`;
+  });
+}
